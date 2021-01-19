@@ -1,0 +1,23 @@
+com/example/insideindia/ui/polls/PollsFragment.java
+ com.example.insideindia.ui.polls.PollsFragment
+ com.example.insideindia.ui.polls.PollsFragment$1
+com/example/insideindia/ui/polls/PollsViewModel.java
+ com.example.insideindia.ui.polls.PollsViewModel
+com/example/insideindia/ui/biography/BiographyViewModel.java
+ com.example.insideindia.ui.biography.BiographyViewModel
+com/example/insideindia/ui/assembley/AssembleyViewModel.java
+ com.example.insideindia.ui.assembley.AssembleyViewModel
+com/example/insideindia/ui/assembley/AssembleyFragment.java
+ com.example.insideindia.ui.assembley.AssembleyFragment
+ com.example.insideindia.ui.assembley.AssembleyFragment$1
+com/example/insideindia/ui/biography/BiographyFragment.java
+ com.example.insideindia.ui.biography.BiographyFragment
+ com.example.insideindia.ui.biography.BiographyFragment$1
+com/example/insideindia/MainActivity.java
+ com.example.insideindia.MainActivity
+com/example/insideindia/BuildConfig.java
+ com.example.insideindia.BuildConfig
+com/example/insideindia/ui/home/HomeViewModel.java
+ com.example.insideindia.ui.home.HomeViewModel
+com/example/insideindia/ui/home/HomeFragment.java
+ com.example.insideindia.ui.home.HomeFragment

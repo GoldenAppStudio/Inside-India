@@ -1,0 +1,3866 @@
+Index: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(date 1610358587000)
++++ app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(date 1610358587000)
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="utf-8"?>
++<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
++    <background android:drawable="@drawable/ic_launcher_background" />
++    <foreground android:drawable="@drawable/ic_launcher_foreground" />
++</adaptive-icon>
+\ No newline at end of file
+Index: app/src/main/res/values/arrays.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/arrays.xml	(date 1610365900000)
++++ app/src/main/res/values/arrays.xml	(date 1610365900000)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <integer-array name="img_id_arr">
++        <item>@drawable/flipper_modi</item>
++        <item>@drawable/flipper_modi</item>
++        <item>@drawable/flipper_modi</item>
++
++    </integer-array>
++
++</resources>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/jarRepositories.xml	(date 1610442737000)
++++ .idea/jarRepositories.xml	(date 1610442737000)
+@@ -0,0 +1,30 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="BintrayJCenter" />
++      <option name="name" value="BintrayJCenter" />
++      <option name="url" value="https://jcenter.bintray.com/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="Google" />
++      <option name="name" value="Google" />
++      <option name="url" value="https://dl.google.com/dl/android/maven2/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="maven" />
++      <option name="name" value="maven" />
++      <option name="url" value="https://jitpack.io" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: app/proguard-rules.pro
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/proguard-rules.pro	(date 1610358586000)
++++ app/proguard-rules.pro	(date 1610358586000)
+@@ -0,0 +1,21 @@
++# Add project specific ProGuard rules here.
++# You can control the set of applied configuration files using the
++# proguardFiles setting in build.gradle.
++#
++# For more details, see
++#   http://developer.android.com/guide/developing/tools/proguard.html
++
++# If your project uses WebView with JS, uncomment the following
++# and specify the fully qualified class name to the JavaScript interface
++# class:
++#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
++#   public *;
++#}
++
++# Uncomment this to preserve the line number information for
++# debugging stack traces.
++#-keepattributes SourceFile,LineNumberTable
++
++# If you keep the line number information, uncomment this to
++# hide the original source file name.
++#-renamesourcefileattribute SourceFile
+\ No newline at end of file
+Index: app/src/test/java/com/example/insideindia/ExampleUnitTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/test/java/com/example/insideindia/ExampleUnitTest.java	(date 1610358587000)
++++ app/src/test/java/com/example/insideindia/ExampleUnitTest.java	(date 1610358587000)
+@@ -0,0 +1,17 @@
++package com.example.insideindia;
++
++import org.junit.Test;
++
++import static org.junit.Assert.*;
++
++/**
++ * Example local unit test, which will execute on the development machine (host).
++ *
++ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
++ */
++public class ExampleUnitTest {
++    @Test
++    public void addition_isCorrect() {
++        assertEquals(4, 2 + 2);
++    }
++}
+\ No newline at end of file
+Index: app/src/androidTest/java/com/example/insideindia/ExampleInstrumentedTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/androidTest/java/com/example/insideindia/ExampleInstrumentedTest.java	(date 1610358587000)
++++ app/src/androidTest/java/com/example/insideindia/ExampleInstrumentedTest.java	(date 1610358587000)
+@@ -0,0 +1,26 @@
++package com.example.insideindia;
++
++import android.content.Context;
++
++import androidx.test.platform.app.InstrumentationRegistry;
++import androidx.test.ext.junit.runners.AndroidJUnit4;
++
++import org.junit.Test;
++import org.junit.runner.RunWith;
++
++import static org.junit.Assert.*;
++
++/**
++ * Instrumented test, which will execute on an Android device.
++ *
++ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
++ */
++@RunWith(AndroidJUnit4.class)
++public class ExampleInstrumentedTest {
++    @Test
++    public void useAppContext() {
++        // Context of the app under test.
++        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
++        assertEquals("com.example.insideindia", appContext.getPackageName());
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/pager_image.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/pager_image.xml	(date 1610468675000)
++++ app/src/main/res/layout/pager_image.xml	(date 1610468675000)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    android:orientation="vertical" android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <ImageView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        app:srcCompat="@mipmap/ic_launcher"
++        android:scaleType="fitXY"
++        android:adjustViewBounds="true"
++        android:id="@+id/imageView" />
++</LinearLayout>
+\ No newline at end of file
+Index: app/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/.gitignore	(date 1610358586000)
++++ app/.gitignore	(date 1610358586000)
+@@ -0,0 +1,1 @@
++/build
+\ No newline at end of file
+Index: app/src/main/res/drawable/active_dot.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/active_dot.xml	(date 1610468761000)
++++ app/src/main/res/drawable/active_dot.xml	(date 1610468761000)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="oval" android:useLevel="true"
++    android:dither="true">
++
++    <size android:height="12dip" android:width="12dip"/>
++
++    <solid android:color="@color/black"/>
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable-v24/unactive_dot.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/unactive_dot.xml	(date 1610468785000)
++++ app/src/main/res/drawable-v24/unactive_dot.xml	(date 1610468785000)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="oval" android:useLevel="true"
++    android:dither="true">
++
++    <size android:height="12dip" android:width="12dip"/>
++
++    <solid android:color="#bebebe"/>
++</shape>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(date 1611044677000)
++++ app/src/main/AndroidManifest.xml	(date 1611044677000)
+@@ -0,0 +1,27 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.example.insideindia">
++    <uses-permission android:name="android.permission.INTERNET"/>
++
++    <application
++        android:allowBackup="true"
++        android:icon="@mipmap/ic_launcher"
++        android:label="@string/app_name"
++        android:roundIcon="@mipmap/ic_launcher_round"
++        android:supportsRtl="true"
++        android:theme="@style/Theme.InsideIndia">
++        <activity
++            android:name=".MainActivity"
++            android:label="@string/app_name">
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
++
++                <category android:name="android.intent.category.LAUNCHER" />
++            </intent-filter>
++        </activity>
++        <meta-data
++            android:name="preloaded_fonts"
++            android:resource="@array/preloaded_fonts" />
++    </application>
++
++</manifest>
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(date 1610973012000)
++++ app/build.gradle	(date 1610973012000)
+@@ -0,0 +1,43 @@
++plugins {
++    id 'com.android.application'
++}
++
++android {
++    compileSdkVersion 30
++    buildToolsVersion "30.0.2"
++
++    defaultConfig {
++        applicationId "com.example.insideindia"
++        minSdkVersion 24
++        targetSdkVersion 30
++        versionCode 1
++        versionName "1.0"
++
++        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
++    }
++
++    buildTypes {
++        release {
++            minifyEnabled false
++            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
++        }
++    }
++    compileOptions {
++        sourceCompatibility JavaVersion.VERSION_1_8
++        targetCompatibility JavaVersion.VERSION_1_8
++    }
++}
++
++dependencies {
++
++    implementation 'androidx.appcompat:appcompat:1.2.0'
++    implementation 'com.google.android.material:material:1.2.1'
++    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
++    implementation 'androidx.navigation:navigation-fragment:2.3.2'
++    implementation 'androidx.navigation:navigation-ui:2.3.2'
++    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
++    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
++    implementation 'com.github.dmytrodanylyk.shadow-layout:library:1.0.1'
++    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
++    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/news_card_view.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/news_card_view.xml	(date 1610699232000)
++++ app/src/main/res/layout/news_card_view.xml	(date 1610699232000)
+@@ -0,0 +1,36 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="280dp"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    app:cardCornerRadius="5dp"
++    app:cardUseCompatPadding="true"
++    app:cardElevation="10dp">
++
++    <LinearLayout
++        android:layout_width="370dp"
++        android:layout_height="220dp"
++        android:layout_margin="10dp"
++        android:orientation="vertical"
++        >
++
++        <ImageView
++            android:id="@+id/news_image"
++            android:layout_width="match_parent"
++            android:layout_height="180dp"
++            android:src="@drawable/nws"
++            android:scaleType="fitXY"
++            />
++        <TextView
++            android:id="@+id/news_text"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="5dp"
++            android:text="Latest News: subscribe"
++            android:textSize="17sp"
++            android:textColor="@color/black"
++            />
++
++    </LinearLayout>
++
++</androidx.cardview.widget.CardView>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1610358607000)
++++ .idea/compiler.xml	(date 1610358607000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="1.8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: gradlew.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gradlew.bat	(date 1610358585000)
++++ gradlew.bat	(date 1610358585000)
+@@ -0,0 +1,84 @@
++@if "%DEBUG%" == "" @echo off
++@rem ##########################################################################
++@rem
++@rem  Gradle startup script for Windows
++@rem
++@rem ##########################################################################
++
++@rem Set local scope for the variables with windows NT shell
++if "%OS%"=="Windows_NT" setlocal
++
++set DIRNAME=%~dp0
++if "%DIRNAME%" == "" set DIRNAME=.
++set APP_BASE_NAME=%~n0
++set APP_HOME=%DIRNAME%
++
++@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++set DEFAULT_JVM_OPTS=
++
++@rem Find java.exe
++if defined JAVA_HOME goto findJavaFromJavaHome
++
++set JAVA_EXE=java.exe
++%JAVA_EXE% -version >NUL 2>&1
++if "%ERRORLEVEL%" == "0" goto init
++
++echo.
++echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:findJavaFromJavaHome
++set JAVA_HOME=%JAVA_HOME:"=%
++set JAVA_EXE=%JAVA_HOME%/bin/java.exe
++
++if exist "%JAVA_EXE%" goto init
++
++echo.
++echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:init
++@rem Get command-line arguments, handling Windows variants
++
++if not "%OS%" == "Windows_NT" goto win9xME_args
++
++:win9xME_args
++@rem Slurp the command line arguments.
++set CMD_LINE_ARGS=
++set _SKIP=2
++
++:win9xME_args_slurp
++if "x%~1" == "x" goto execute
++
++set CMD_LINE_ARGS=%*
++
++:execute
++@rem Setup the command line
++
++set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
++
++@rem Execute Gradle
++"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %CMD_LINE_ARGS%
++
++:end
++@rem End local scope for the variables with windows NT shell
++if "%ERRORLEVEL%"=="0" goto mainEnd
++
++:fail
++rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
++rem the _cmd.exe /c_ return code!
++if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
++exit /b 1
++
++:mainEnd
++if "%OS%"=="Windows_NT" endlocal
++
++:omega
+Index: gradlew
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gradlew	(date 1610358585000)
++++ gradlew	(date 1610358585000)
+@@ -0,0 +1,172 @@
++#!/usr/bin/env sh
++
++##############################################################################
++##
++##  Gradle start up script for UN*X
++##
++##############################################################################
++
++# Attempt to set APP_HOME
++# Resolve links: $0 may be a link
++PRG="$0"
++# Need this for relative symlinks.
++while [ -h "$PRG" ] ; do
++    ls=`ls -ld "$PRG"`
++    link=`expr "$ls" : '.*-> \(.*\)$'`
++    if expr "$link" : '/.*' > /dev/null; then
++        PRG="$link"
++    else
++        PRG=`dirname "$PRG"`"/$link"
++    fi
++done
++SAVED="`pwd`"
++cd "`dirname \"$PRG\"`/" >/dev/null
++APP_HOME="`pwd -P`"
++cd "$SAVED" >/dev/null
++
++APP_NAME="Gradle"
++APP_BASE_NAME=`basename "$0"`
++
++# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++DEFAULT_JVM_OPTS=""
++
++# Use the maximum available, or set MAX_FD != -1 to use that value.
++MAX_FD="maximum"
++
++warn () {
++    echo "$*"
++}
++
++die () {
++    echo
++    echo "$*"
++    echo
++    exit 1
++}
++
++# OS specific support (must be 'true' or 'false').
++cygwin=false
++msys=false
++darwin=false
++nonstop=false
++case "`uname`" in
++  CYGWIN* )
++    cygwin=true
++    ;;
++  Darwin* )
++    darwin=true
++    ;;
++  MINGW* )
++    msys=true
++    ;;
++  NONSTOP* )
++    nonstop=true
++    ;;
++esac
++
++CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
++
++# Determine the Java command to use to start the JVM.
++if [ -n "$JAVA_HOME" ] ; then
++    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
++        # IBM's JDK on AIX uses strange locations for the executables
++        JAVACMD="$JAVA_HOME/jre/sh/java"
++    else
++        JAVACMD="$JAVA_HOME/bin/java"
++    fi
++    if [ ! -x "$JAVACMD" ] ; then
++        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++    fi
++else
++    JAVACMD="java"
++    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++fi
++
++# Increase the maximum file descriptors if we can.
++if [ "$cygwin" = "false" -a "$darwin" = "false" -a "$nonstop" = "false" ] ; then
++    MAX_FD_LIMIT=`ulimit -H -n`
++    if [ $? -eq 0 ] ; then
++        if [ "$MAX_FD" = "maximum" -o "$MAX_FD" = "max" ] ; then
++            MAX_FD="$MAX_FD_LIMIT"
++        fi
++        ulimit -n $MAX_FD
++        if [ $? -ne 0 ] ; then
++            warn "Could not set maximum file descriptor limit: $MAX_FD"
++        fi
++    else
++        warn "Could not query maximum file descriptor limit: $MAX_FD_LIMIT"
++    fi
++fi
++
++# For Darwin, add options to specify how the application appears in the dock
++if $darwin; then
++    GRADLE_OPTS="$GRADLE_OPTS \"-Xdock:name=$APP_NAME\" \"-Xdock:icon=$APP_HOME/media/gradle.icns\""
++fi
++
++# For Cygwin, switch paths to Windows format before running java
++if $cygwin ; then
++    APP_HOME=`cygpath --path --mixed "$APP_HOME"`
++    CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
++    JAVACMD=`cygpath --unix "$JAVACMD"`
++
++    # We build the pattern for arguments to be converted via cygpath
++    ROOTDIRSRAW=`find -L / -maxdepth 1 -mindepth 1 -type d 2>/dev/null`
++    SEP=""
++    for dir in $ROOTDIRSRAW ; do
++        ROOTDIRS="$ROOTDIRS$SEP$dir"
++        SEP="|"
++    done
++    OURCYGPATTERN="(^($ROOTDIRS))"
++    # Add a user-defined pattern to the cygpath arguments
++    if [ "$GRADLE_CYGPATTERN" != "" ] ; then
++        OURCYGPATTERN="$OURCYGPATTERN|($GRADLE_CYGPATTERN)"
++    fi
++    # Now convert the arguments - kludge to limit ourselves to /bin/sh
++    i=0
++    for arg in "$@" ; do
++        CHECK=`echo "$arg"|egrep -c "$OURCYGPATTERN" -`
++        CHECK2=`echo "$arg"|egrep -c "^-"`                                 ### Determine if an option
++
++        if [ $CHECK -ne 0 ] && [ $CHECK2 -eq 0 ] ; then                    ### Added a condition
++            eval `echo args$i`=`cygpath --path --ignore --mixed "$arg"`
++        else
++            eval `echo args$i`="\"$arg\""
++        fi
++        i=$((i+1))
++    done
++    case $i in
++        (0) set -- ;;
++        (1) set -- "$args0" ;;
++        (2) set -- "$args0" "$args1" ;;
++        (3) set -- "$args0" "$args1" "$args2" ;;
++        (4) set -- "$args0" "$args1" "$args2" "$args3" ;;
++        (5) set -- "$args0" "$args1" "$args2" "$args3" "$args4" ;;
++        (6) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" ;;
++        (7) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" ;;
++        (8) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" ;;
++        (9) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$args8" ;;
++    esac
++fi
++
++# Escape application args
++save () {
++    for i do printf %s\\n "$i" | sed "s/'/'\\\\''/g;1s/^/'/;\$s/\$/' \\\\/" ; done
++    echo " "
++}
++APP_ARGS=$(save "$@")
++
++# Collect all arguments for the java command, following the shell quoting and substitution rules
++eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
++
++# by default we should be in the correct project dir, but when run from Finder on Mac, the cwd is wrong
++if [ "$(uname)" = "Darwin" ] && [ "$HOME" = "$PWD" ]; then
++  cd "$(dirname "$0")"
++fi
++
++exec "$JAVACMD" "$@"
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gradle/wrapper/gradle-wrapper.properties	(date 1610358589000)
++++ gradle/wrapper/gradle-wrapper.properties	(date 1610358589000)
+@@ -0,0 +1,6 @@
++#Mon Jan 11 15:19:49 IST 2021
++distributionBase=GRADLE_USER_HOME
++distributionPath=wrapper/dists
++zipStoreBase=GRADLE_USER_HOME
++zipStorePath=wrapper/dists
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip
+Index: settings.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- settings.gradle	(date 1610358586000)
++++ settings.gradle	(date 1610358586000)
+@@ -0,0 +1,2 @@
++include ':app'
++rootProject.name = "InsideIndia"
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(date 1610358585000)
++++ .gitignore	(date 1610358585000)
+@@ -0,0 +1,15 @@
++*.iml
++.gradle
++/local.properties
++/.idea/caches
++/.idea/libraries
++/.idea/modules.xml
++/.idea/workspace.xml
++/.idea/navEditor.xml
++/.idea/assetWizardSettings.xml
++.DS_Store
++/build
++/captures
++.externalNativeBuild
++.cxx
++local.properties
+Index: gradle.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gradle.properties	(date 1610358585000)
++++ gradle.properties	(date 1610358585000)
+@@ -0,0 +1,19 @@
++# Project-wide Gradle settings.
++# IDE (e.g. Android Studio) users:
++# Gradle settings configured through the IDE *will override*
++# any settings specified in this file.
++# For more details on how to configure your build environment visit
++# http://www.gradle.org/docs/current/userguide/build_environment.html
++# Specifies the JVM arguments used for the daemon process.
++# The setting is particularly useful for tweaking memory settings.
++org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
++# When configured, Gradle will run in incubating parallel mode.
++# This option should only be used with decoupled projects. More details, visit
++# http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
++# org.gradle.parallel=true
++# AndroidX package structure to make it clearer which packages are bundled with the
++# Android operating system, and which are packaged with your app"s APK
++# https://developer.android.com/topic/libraries/support-library/androidx-rn
++android.useAndroidX=true
++# Automatically convert third-party libraries to use AndroidX
++android.enableJetifier=true
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(date 1610442719000)
++++ build.gradle	(date 1610442719000)
+@@ -0,0 +1,25 @@
++// Top-level build file where you can add configuration options common to all sub-projects/modules.
++buildscript {
++    repositories {
++        google()
++        jcenter()
++    }
++    dependencies {
++        classpath "com.android.tools.build:gradle:4.1.1"
++
++        // NOTE: Do not place your application dependencies here; they belong
++        // in the individual module build.gradle files
++    }
++}
++
++allprojects {
++    repositories {
++        google()
++        jcenter()
++        maven { url 'https://jitpack.io' }
++    }
++}
++
++task clean(type: Delete) {
++    delete rootProject.buildDir
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_back.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_back.xml	(date 1611048768000)
++++ app/src/main/res/drawable/ic_back.xml	(date 1611048768000)
+@@ -0,0 +1,13 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="12dp"
++    android:height="20dp"
++    android:viewportWidth="12"
++    android:viewportHeight="20">
++  <path
++      android:pathData="M11,19L1,10L11,1"
++      android:strokeLineJoin="round"
++      android:strokeWidth="2"
++      android:fillColor="#00000000"
++      android:strokeColor="#F5F5F5"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/layout/drop_down_row.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/drop_down_row.xml	(date 1611047724000)
++++ app/src/main/res/layout/drop_down_row.xml	(date 1611047724000)
+@@ -0,0 +1,24 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="wrap_content"
++    android:orientation="horizontal"
++    android:gravity="center"
++    android:padding="10dip">
++
++    <ImageView
++        android:id="@+id/spinner_img"
++        android:layout_width="30dp"
++        android:layout_height="25dp"
++        android:src="@drawable/flag" />
++
++    <TextView
++        android:id="@+id/spinner_name"
++        android:layout_width="match_parent"
++        android:layout_height="25dp"
++        android:layout_marginStart="20dp"
++        android:text="India"
++        android:fontFamily="@font/poppins"
++        android:textSize="17sp"
++        android:textColor="@color/black" />
++</LinearLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/verification.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/verification.xml	(date 1611049715000)
++++ app/src/main/res/layout/verification.xml	(date 1611049715000)
+@@ -0,0 +1,125 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/red">
++
++    <LinearLayout
++        android:id="@+id/verification_back_button"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_margin="20dp">
++
++        <ImageButton
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:background="none"
++            android:src="@drawable/ic_back" />
++
++    </LinearLayout>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:layout_below="@+id/verification_back_button"
++        android:orientation="vertical"
++        android:gravity="center"
++        android:layout_marginBottom="60dp"
++        >
++
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/poppins_medium"
++            android:text="Verification Code"
++            android:textAlignment="center"
++            android:textColor="@color/white"
++            android:textSize="30sp" />
++
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="5dp"
++            android:text="Please type the verification code sent to \n
+++91 0000000000"
++            android:textAlignment="center"
++            android:textColor="@color/white"
++            android:textSize="17sp"
++
++            />
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:gravity="center"
++            android:layout_margin="20dp"
++            android:paddingTop="30dp"
++            >
++
++            <EditText
++                android:layout_width="50dp"
++                android:layout_height="50dp"
++                android:layout_margin="5dp"
++                android:background="@drawable/verification_number_bg"
++                android:text="2"
++                android:textAlignment="center"
++                android:textColor="@color/white"
++                android:textSize="20sp" />
++
++            <EditText
++                android:layout_width="50dp"
++                android:layout_height="50dp"
++                android:layout_margin="5dp"
++                android:background="@drawable/verification_number_bg"
++                android:text="2"
++                android:textAlignment="center"
++                android:textColor="@color/white"
++                android:textSize="20sp" />
++
++            <EditText
++                android:layout_width="50dp"
++                android:layout_height="50dp"
++                android:layout_margin="5dp"
++                android:background="@drawable/verification_number_bg"
++                android:text="2"
++                android:textAlignment="center"
++                android:textColor="@color/white"
++                android:textSize="20sp" />
++
++            <EditText
++                android:layout_width="50dp"
++                android:layout_height="50dp"
++                android:layout_margin="5dp"
++                android:background="@drawable/verification_number_bg"
++                android:text="2"
++                android:textAlignment="center"
++                android:textColor="@color/white"
++                android:textSize="20sp" />
++
++            <EditText
++                android:layout_width="50dp"
++                android:layout_height="50dp"
++                android:layout_margin="5dp"
++                android:background="@drawable/verification_number_bg"
++                android:text="2"
++                android:textAlignment="center"
++                android:textColor="@color/white"
++                android:textSize="20sp" />
++
++            <EditText
++                android:layout_width="50dp"
++                android:layout_height="50dp"
++                android:layout_margin="5dp"
++                android:background="@drawable/verification_number_bg"
++                android:text="2"
++                android:textAlignment="center"
++                android:textColor="@color/white"
++                android:textSize="20sp" />
++
++
++        </LinearLayout>
++
++    </LinearLayout>
++
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/drawable/verification_number_bg.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/verification_number_bg.xml	(date 1611049362000)
++++ app/src/main/res/drawable/verification_number_bg.xml	(date 1611049362000)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="rectangle">
++
++    <solid android:color="@color/verification_edit" />
++    <corners android:radius="5dp" />
++</shape>
+Index: app/src/main/res/layout/slider_dots.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/slider_dots.xml	(date 1610701061000)
++++ app/src/main/res/layout/slider_dots.xml	(date 1610701061000)
+@@ -0,0 +1,37 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:id="@+id/SliderDots"
++    android:layout_width="match_parent"
++    android:layout_height="wrap_content"
++    android:layout_below="@+id/viewPager"
++    android:gravity="center_vertical|center_horizontal"
++    android:orientation="horizontal">
++
++    <ImageView
++        android:id="@+id/dot0"
++        android:layout_width="10dp"
++        android:layout_height="10dp"
++        android:layout_marginEnd="5dp"
++        android:src="@drawable/active_dot" />
++
++    <ImageView
++        android:id="@+id/dot1"
++        android:layout_width="10dp"
++        android:layout_height="10dp"
++        android:layout_marginEnd="5dp"
++        android:src="@drawable/unactive_dot" />
++
++    <ImageView
++        android:id="@+id/dot2"
++        android:layout_width="10dp"
++        android:layout_height="10dp"
++        android:layout_marginEnd="5dp"
++        android:src="@drawable/unactive_dot" />
++
++    <ImageView
++        android:id="@+id/dot3"
++        android:layout_width="10dp"
++        android:layout_height="10dp"
++        android:layout_marginEnd="5dp"
++        android:src="@drawable/unactive_dot" />
++</LinearLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/assembley_cardview.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/assembley_cardview.xml	(date 1610701932000)
++++ app/src/main/res/layout/assembley_cardview.xml	(date 1610701932000)
+@@ -0,0 +1,36 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    android:layout_width="100dp"
++    android:layout_height="120dp"
++    app:cardUseCompatPadding="true"
++    android:elevation="5dp"
++    app:cardElevation="5dp">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:orientation="vertical">
++
++       <ImageView
++           android:id="@+id/assembley_card_image"
++           android:layout_width="match_parent"
++           android:layout_height="85dp"
++           android:src="@drawable/utrakhand"
++           android:scaleType="fitCenter"
++           />
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="15dp"
++            android:text="Utrakhand"
++            android:textAlignment="center"
++            android:background="@color/white"
++            android:textColor="@color/black"
++            android:textSize="12sp"
++
++            />
++
++    </LinearLayout>
++
++
++</androidx.cardview.widget.CardView>
+\ No newline at end of file
+Index: app/src/main/res/layout/assembley_state.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/assembley_state.xml	(date 1610704461000)
++++ app/src/main/res/layout/assembley_state.xml	(date 1610704461000)
+@@ -0,0 +1,190 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <LinearLayout
++        android:id="@+id/stateImageContainer"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_centerHorizontal="true"
++        android:orientation="vertical">
++
++        <ImageView
++            android:id="@+id/assembley_state_image"
++            android:layout_width="160dp"
++            android:layout_height="160dp"
++            android:src="@drawable/utrakhand" />
++
++        <TextView
++            android:id="@+id/assembley_state_text"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="10dp"
++            android:text="Utrakhand"
++            android:textAlignment="center"
++            android:textSize="30sp"
++            android:textStyle="bold" />
++    </LinearLayout>
++
++    <LinearLayout
++        android:id="@+id/state_type"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/stateImageContainer"
++        android:layout_alignParentStart="true"
++        android:layout_alignParentEnd="true"
++        android:layout_marginStart="20dp"
++        android:layout_marginTop="20dp"
++        android:layout_marginEnd="20dp"
++        android:orientation="vertical">
++
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:background="@drawable/assembley_shape"
++            >
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="5dp"
++                android:text="Type"
++                android:textAlignment="center"
++                android:textColor="@color/black"
++                android:textSize="20sp" />
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="20dp"
++            android:layout_marginLeft="5dp"
++            android:layout_marginRight="5dp"
++            android:orientation="horizontal">
++
++            <TextView
++                android:layout_width="160dp"
++                android:layout_height="wrap_content"
++                android:text="Type"
++                android:textColor="@color/black"
++                android:textSize="20sp" />
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Text from Web"
++                android:textAlignment="viewEnd"
++                android:textColor="@color/lightText"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="20dp"
++            android:layout_marginLeft="5dp"
++            android:layout_marginRight="5dp"
++            android:orientation="horizontal">
++
++            <TextView
++                android:layout_width="160dp"
++                android:layout_height="wrap_content"
++                android:text="Type"
++                android:textColor="@color/black"
++                android:textSize="20sp" />
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Text from Web"
++                android:textAlignment="viewEnd"
++                android:textColor="@color/lightText"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++
++    </LinearLayout>
++
++    <LinearLayout
++        android:id="@+id/state_leadership"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/state_type"
++        android:layout_alignParentStart="true"
++        android:layout_alignParentEnd="true"
++        android:layout_marginStart="20dp"
++        android:layout_marginTop="20dp"
++        android:layout_marginEnd="20dp"
++        android:orientation="vertical">
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:background="@drawable/assembley_shape"
++            >
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:padding="5dp"
++                android:text="Leadership"
++                android:textAlignment="center"
++                android:textColor="@color/black"
++                android:textSize="20sp" />
++        </LinearLayout>
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="20dp"
++            android:layout_marginLeft="5dp"
++            android:layout_marginRight="5dp"
++            android:orientation="horizontal">
++
++            <TextView
++                android:layout_width="160dp"
++                android:layout_height="wrap_content"
++                android:text="Type"
++                android:textColor="@color/black"
++                android:textSize="20sp" />
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Text from Web"
++                android:textAlignment="viewEnd"
++                android:textColor="@color/lightText"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="20dp"
++            android:layout_marginLeft="5dp"
++            android:layout_marginRight="5dp"
++            android:orientation="horizontal">
++
++            <TextView
++                android:layout_width="160dp"
++                android:layout_height="wrap_content"
++                android:text="Type"
++                android:textColor="@color/black"
++                android:textSize="20sp" />
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Text from Web"
++                android:textAlignment="viewEnd"
++                android:textColor="@color/lightText"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++
++    </LinearLayout>
++
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/biography_cardview.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/biography_cardview.xml	(date 1610723863000)
++++ app/src/main/res/layout/biography_cardview.xml	(date 1610723863000)
+@@ -0,0 +1,39 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    android:layout_width="120dp"
++    android:layout_height="120dp"
++    app:cardUseCompatPadding="true"
++    android:elevation="50dp"
++    app:cardElevation="5dp">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="100dp"
++        android:padding="0dp"
++        android:layout_margin="0dp"
++        android:layout_gravity="center_horizontal"
++        android:orientation="vertical">
++
++       <ImageView
++           android:id="@+id/assembley_card_image"
++           android:layout_width="match_parent"
++           android:layout_height="80dp"
++           android:src="@drawable/flipper_modi"
++           android:scaleType="centerCrop"
++           />
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="15dp"
++            android:text="Narender Modi"
++            android:textAlignment="center"
++            android:background="@color/white"
++            android:textColor="@color/black"
++            android:textSize="12sp"
++
++            />
++
++    </LinearLayout>
++
++
++</androidx.cardview.widget.CardView>
+\ No newline at end of file
+Index: app/src/main/res/drawable/button_shadow.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/button_shadow.xml	(date 1610975462000)
++++ app/src/main/res/drawable/button_shadow.xml	(date 1610975462000)
+@@ -0,0 +1,7 @@
++<shape xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="rectangle">
++    
++    <solid android:color="@color/black" />
++
++    <corners android:radius="50dp" />
++</shape>
+Index: app/src/main/res/drawable/color_selector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/color_selector.xml	(date 1610974643000)
++++ app/src/main/res/drawable/color_selector.xml	(date 1610974643000)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="utf-8"?>
++<selector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:dither="true">
++    <item
++        android:state_pressed="true"
++        android:color="@color/black" />
++    <item
++        android:state_focused="true"
++        android:color="@color/black" />
++    <item
++        android:color="@color/black" />
++</selector>
+Index: app/src/main/res/drawable/assembley_shape.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/assembley_shape.xml	(date 1610704224000)
++++ app/src/main/res/drawable/assembley_shape.xml	(date 1610704224000)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="rectangle"   >
++
++    <solid
++        android:color="@color/grey" >
++    </solid>
++
++
++
++    <corners
++        android:radius="10dp"   >
++    </corners>
++
++</shape>
+Index: app/src/main/res/layout/toolbar.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/toolbar.xml	(date 1610363825000)
++++ app/src/main/res/layout/toolbar.xml	(date 1610363825000)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent" android:layout_height="wrap_content"
++    android:background="@color/red"
++    android:elevation="4dp"
++    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
++
++</androidx.appcompat.widget.Toolbar>
+\ No newline at end of file
+Index: app/src/main/res/drawable/buttonbordershadow.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/buttonbordershadow.xml	(date 1610975589000)
++++ app/src/main/res/drawable/buttonbordershadow.xml	(date 1610975589000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="utf-8"?>
++<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
++
++    <item android:drawable="@drawable/button_shadow"
++
++    />
++
++    <item
++        android:bottom="10dp"
++        android:drawable="@drawable/button_corner" />
++</layer-list>
+Index: app/src/main/res/drawable/option_border.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/option_border.xml	(date 1610721985000)
++++ app/src/main/res/drawable/option_border.xml	(date 1610721985000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
++    <corners android:radius="5dp"/>
++    <padding android:left="10dp" android:right="10dp" android:top="10dp" android:bottom="10dp"/>
++    <stroke android:width="2dp" android:color="#B3B3B3"/>
++</shape>
+Index: app/src/main/res/drawable-v24/question_border.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/question_border.xml	(date 1610988705000)
++++ app/src/main/res/drawable-v24/question_border.xml	(date 1610988705000)
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
++    <corners android:radius="3dp"/>
++    <stroke android:width="2dp" android:color="#B3B3B3"/>
++</shape>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1611050191000)
++++ .idea/vcs.xml	(date 1611050191000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.gitignore	(date 1610358599000)
++++ .idea/.gitignore	(date 1610358599000)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: app/src/main/res/layout/quiz_result.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/quiz_result.xml	(date 1610990354000)
++++ app/src/main/res/layout/quiz_result.xml	(date 1610990354000)
+@@ -0,0 +1,161 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/quizBg">
++
++
++    <LinearLayout
++        android:id="@+id/quizResultHeading"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="100dp">
++
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:gravity="center"
++            android:text="Quiz Result"
++            android:textColor="@color/correctQuestion"
++            android:textSize="35sp" />
++
++    </LinearLayout>
++
++    <LinearLayout
++        android:id="@+id/quizResult"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@id/quizResultHeading"
++        android:orientation="vertical"
++        android:layout_marginTop="100dp">
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal"
++            android:layout_marginStart="20dp"
++            android:layout_marginEnd="20dp"
++            >
++
++            <TextView
++                android:layout_width="170dp"
++                android:layout_height="wrap_content"
++                android:text="Total Questions"
++                android:textSize="17sp"
++                android:textColor="@color/white" />
++
++            <TextView
++                android:layout_width="200dp"
++                android:layout_height="wrap_content"
++                android:text="30"
++                android:textColor="@color/white"
++                android:textSize="17sp"
++
++                android:gravity="end"
++                />
++        </LinearLayout>
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal"
++            android:layout_marginStart="20dp"
++            android:layout_marginEnd="20dp"
++            android:layout_marginTop="30dp"
++            >
++
++            <TextView
++                android:layout_width="170dp"
++                android:layout_height="wrap_content"
++                android:text="Correct Answers"
++                android:textSize="17sp"
++                android:textColor="@color/white" />
++
++            <TextView
++                android:layout_width="200dp"
++                android:layout_height="wrap_content"
++                android:text="27"
++                android:textColor="@color/white"
++                android:textSize="17sp"
++                android:gravity="end"
++                />
++        </LinearLayout>
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal"
++            android:layout_marginStart="20dp"
++            android:layout_marginEnd="20dp"
++            android:layout_marginTop="30dp"
++            >
++
++            <TextView
++                android:layout_width="170dp"
++                android:layout_height="wrap_content"
++                android:text="Incorrect Answers"
++                android:textSize="17sp"
++                android:textColor="@color/white" />
++
++            <TextView
++                android:layout_width="200dp"
++                android:layout_height="wrap_content"
++                android:text="3"
++                android:textColor="@color/white"
++                android:textSize="17sp"
++                android:gravity="end"
++                />
++        </LinearLayout>  <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="horizontal"
++        android:layout_marginStart="20dp"
++        android:layout_marginEnd="20dp"
++        android:layout_marginTop="30dp"
++        >
++
++        <TextView
++            android:layout_width="170dp"
++            android:layout_height="wrap_content"
++            android:text="Time Taken"
++            android:textSize="17sp"
++            android:textColor="@color/white" />
++
++        <TextView
++            android:layout_width="200dp"
++            android:layout_height="wrap_content"
++            android:text="03:33"
++            android:textColor="@color/white"
++            android:textSize="17sp"
++
++            android:gravity="end"
++            />
++    </LinearLayout>
++    </LinearLayout>
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/quizResult"
++        android:layout_marginTop="100dp"
++        android:orientation="vertical"
++        android:gravity="center"
++        >
++
++        <androidx.appcompat.widget.AppCompatButton
++            android:layout_width="270dp"
++            android:layout_height="40dp"
++            android:layout_marginTop="20dp"
++            android:background="@drawable/question_border"
++            android:backgroundTint="@color/correctQuestion"
++            android:text="Play Again"
++            />
++        <androidx.appcompat.widget.AppCompatButton
++            android:layout_width="270dp"
++            android:layout_height="40dp"
++            android:layout_marginTop="20dp"
++            android:background="@drawable/question_border"
++            android:backgroundTint="@color/incorrectQuestion"
++            android:text="Exit"
++            />
++
++
++    </LinearLayout>
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/quiz_question.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/quiz_question.xml	(date 1610989629000)
++++ app/src/main/res/layout/quiz_question.xml	(date 1610989629000)
+@@ -0,0 +1,187 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#111111">
++
++
++    <RelativeLayout
++        android:id="@+id/timer"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_gravity="center"
++        android:layout_marginTop="60dp"
++        android:gravity="center">
++
++        <LinearLayout
++            android:layout_width="100dp"
++            android:layout_height="100dp"
++            android:background="@drawable/timer_circle"
++            android:gravity="center"
++            android:orientation="horizontal">
++
++            <TextView
++                android:id="@+id/time_minute"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:gravity="center"
++                android:text="00"
++                android:textColor="@color/white"
++                android:textSize="20sp" />
++
++            <TextView
++                android:id="@+id/time_second"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text=":00"
++                android:textColor="@color/white"
++                android:textSize="20sp" />
++        </LinearLayout>
++
++    </RelativeLayout>
++
++    <LinearLayout
++        android:id="@+id/question_container"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@id/timer"
++        android:layout_marginTop="60dp"
++        android:gravity="center">
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="1. Who is the Prime Minister Of India ?"
++            android:textColor="@color/white"
++            android:textSize="18sp" />
++    </LinearLayout>
++
++    <LinearLayout
++        android:id="@+id/answer_container"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/question_container"
++        android:gravity="center"
++        android:orientation="vertical">
++
++        <LinearLayout
++            android:layout_width="270dp"
++            android:layout_height="40dp"
++            android:layout_marginTop="40dp"
++            android:background="@drawable/question_border"
++            android:gravity="center">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:gravity="center"
++                android:text="Narender Modi"
++                android:textColor="@color/white"
++                android:textSize="17sp" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="270dp"
++            android:layout_height="40dp"
++            android:layout_marginTop="20dp"
++            android:background="@drawable/question_border"
++            android:gravity="center">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:gravity="center"
++                android:text="Narender Modi"
++                android:textColor="@color/white"
++                android:textSize="17sp" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="270dp"
++            android:layout_height="40dp"
++            android:layout_marginTop="20dp"
++            android:background="@drawable/question_border"
++            android:gravity="center">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:gravity="center"
++                android:text="Narender Modi"
++                android:textColor="@color/white"
++                android:textSize="17sp" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="270dp"
++            android:layout_height="40dp"
++            android:layout_marginTop="20dp"
++            android:background="@drawable/question_border"
++            android:gravity="center">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:gravity="center"
++                android:text="Narender Modi"
++                android:textColor="@color/white"
++                android:textSize="17sp" />
++
++        </LinearLayout>
++
++    </LinearLayout>
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/answer_container"
++        android:layout_marginTop="40dp"
++        android:orientation="vertical"
++        android:gravity="center"
++        >
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:text="Incorrect Answer"
++            android:textColor="@color/incorrectQuestion"
++            android:gravity="center"
++            />
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:text="Correct Answer : Narender Modi"
++            android:textColor="@color/incorrectQuestion"
++            android:gravity="center"
++            />
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:text="Correct Answer"
++            android:textColor="@color/correctQuestion"
++            android:gravity="center"
++            />
++
++        <androidx.appcompat.widget.AppCompatButton
++            android:layout_width="270dp"
++            android:layout_height="40dp"
++            android:layout_marginTop="20dp"
++            android:background="@drawable/question_border"
++            android:backgroundTint="@color/correctQuestion"
++            android:text="Next Question"
++            />
++        <androidx.appcompat.widget.AppCompatButton
++            android:layout_width="270dp"
++            android:layout_height="40dp"
++            android:layout_marginTop="20dp"
++            android:background="@drawable/question_border"
++            android:backgroundTint="@color/incorrectQuestion"
++            android:text="Next Question"
++            />
++
++
++    </LinearLayout>
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_newpoll.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_newpoll.xml	(date 1610721306000)
++++ app/src/main/res/drawable/ic_newpoll.xml	(date 1610721306000)
+@@ -0,0 +1,30 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="52dp"
++    android:height="52dp"
++    android:viewportWidth="52"
++    android:viewportHeight="52">
++  <path
++      android:pathData="M26,26m-26,0a26,26 0,1 1,52 0a26,26 0,1 1,-52 0"
++      android:fillColor="#D90404"/>
++  <path
++      android:pathData="M35,37V23.25"
++      android:strokeLineJoin="round"
++      android:strokeWidth="5"
++      android:fillColor="#00000000"
++      android:strokeColor="#F5F5F5"
++      android:strokeLineCap="round"/>
++  <path
++      android:pathData="M26,37V15"
++      android:strokeLineJoin="round"
++      android:strokeWidth="5"
++      android:fillColor="#00000000"
++      android:strokeColor="#F5F5F5"
++      android:strokeLineCap="round"/>
++  <path
++      android:pathData="M17,37V28.75"
++      android:strokeLineJoin="round"
++      android:strokeWidth="5"
++      android:fillColor="#00000000"
++      android:strokeColor="#F5F5F5"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/drawable-v24/timer_circle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/timer_circle.xml	(date 1610987814000)
++++ app/src/main/res/drawable-v24/timer_circle.xml	(date 1610987814000)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="oval"
++    >
++
++
++
++    <size
++        android:width="120dp"
++        android:height="120dp"/>
++    <stroke
++        android:width="2dp"
++        android:color="#FFE500"/>
++
++
++
++</shape>
+Index: app/src/main/res/drawable/circle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/circle.xml	(date 1610970456000)
++++ app/src/main/res/drawable/circle.xml	(date 1610970456000)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="oval"
++    >
++
++
++
++    <size
++        android:width="120dp"
++        android:height="120dp"/>
++    <stroke
++        android:width="2dp"
++        android:color="#14CB9F"/>
++
++
++
++</shape>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1610358607000)
++++ .idea/misc.xml	(date 1610358607000)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/build/classes" />
++  </component>
++  <component name="ProjectType">
++    <option name="id" value="Android" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/anim/slide_in_left.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/anim/slide_in_left.xml	(date 1610468276000)
++++ app/src/main/res/anim/slide_in_left.xml	(date 1610468276000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="utf-8"?>
++<set xmlns:android="http://schemas.android.com/apk/res/android">
++    <translate
++        android:duration="@android:integer/config_mediumAnimTime"
++        android:fromXDelta="0"
++        android:toXDelta="-100%p" />
++    <alpha
++        android:duration="@android:integer/config_mediumAnimTime"
++        android:fromAlpha="1.0"
++        android:toAlpha="0.0" />
++</set>
+\ No newline at end of file
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.name	(date 1610358589000)
++++ .idea/.name	(date 1610358589000)
+@@ -0,0 +1,1 @@
++InsideIndia
+\ No newline at end of file
+Index: app/src/main/res/drawable-v24/button_corner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/button_corner.xml	(date 1610975528000)
++++ app/src/main/res/drawable-v24/button_corner.xml	(date 1610975528000)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
++    <corners android:radius="100dp"/>
++    <padding android:left="10dp" android:right="10dp" android:top="10dp" android:bottom="10dp"/>
++    <stroke android:color="@color/black" android:width="2dp"/>
++
++</shape>
+Index: app/src/main/res/layout/fragment_quiz.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_quiz.xml	(date 1610975839000)
++++ app/src/main/res/layout/fragment_quiz.xml	(date 1610975839000)
+@@ -0,0 +1,198 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++
++    <TextView
++        android:id="@+id/score"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="80dp"
++        android:text="All Time Best Score:"
++        android:textColor="@color/black"
++        android:textSize="25sp"
++
++        />
++
++    <LinearLayout
++        android:id="@+id/first_row"
++        android:layout_width="220dp"
++        android:layout_height="wrap_content"
++        android:layout_below="@id/score"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="50dp"
++        android:orientation="horizontal"
++
++        >
++
++        <RelativeLayout
++            android:id="@+id/score_question_container"
++            android:layout_width="100dp"
++            android:layout_height="100dp"
++            android:layout_below="@+id/score"
++            android:layout_gravity="start"
++            android:background="@drawable/circle"
++            android:gravity="center"
++            android:textColor="@color/black">
++
++
++            <TextView
++                android:id="@+id/question_number"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="-5dp"
++                android:gravity="center"
++                android:text="30"
++
++                android:textColor="@color/black"
++                android:textSize="13sp" />
++
++            <TextView
++                android:id="@+id/questionText"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="10dp"
++                android:gravity="center"
++                android:text="questions"
++                android:textColor="@color/black"
++                android:textSize="13sp" />
++        </RelativeLayout>
++
++        <View
++            android:layout_width="0dp"
++            android:layout_height="0dp"
++            android:layout_weight="1" />
++
++        <RelativeLayout
++            android:id="@+id/score_time_container"
++            android:layout_width="100dp"
++            android:layout_height="100dp"
++            android:layout_below="@+id/score"
++            android:layout_gravity="end"
++            android:background="@drawable/circle"
++            android:gravity="center">
++
++
++            <TextView
++                android:id="@+id/score_time_number"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="-5dp"
++                android:gravity="center"
++                android:text="02:40"
++                android:textColor="@color/black"
++                android:textSize="13sp" />
++
++            <TextView
++                android:id="@+id/question"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="10dp"
++                android:gravity="center"
++                android:text="Time"
++                android:textColor="@color/black"
++                android:textSize="13sp" />
++        </RelativeLayout>
++    </LinearLayout>
++
++    <LinearLayout
++        android:id="@+id/second_row"
++        android:layout_width="220dp"
++        android:layout_height="wrap_content"
++        android:layout_below="@id/first_row"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="20dp"
++        android:orientation="horizontal"
++
++        >
++
++        <RelativeLayout
++            android:id="@+id/score_correct_container"
++            android:layout_width="100dp"
++            android:layout_height="100dp"
++            android:layout_below="@+id/score"
++            android:layout_gravity="start"
++            android:background="@drawable/circle"
++            android:gravity="center"
++
++            >
++
++
++            <TextView
++                android:id="@+id/correct_number"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="-5dp"
++                android:gravity="center"
++                android:text="36"
++                android:textColor="@color/black"
++                android:textSize="13sp" />
++
++            <TextView
++                android:id="@+id/correct"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="10dp"
++                android:gravity="center"
++                android:text="correct"
++                android:textColor="@color/black"
++                android:textSize="13sp" />
++        </RelativeLayout>
++
++        <View
++            android:layout_width="0dp"
++            android:layout_height="0dp"
++            android:layout_weight="1" />
++
++        <RelativeLayout
++            android:id="@+id/score_incorrect_container"
++            android:layout_width="100dp"
++            android:layout_height="100dp"
++            android:layout_below="@+id/score"
++            android:layout_gravity="end"
++            android:background="@drawable/circle"
++            android:gravity="center">
++
++
++            <TextView
++                android:id="@+id/incorrect_number"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="-5dp"
++                android:gravity="center"
++                android:text="4"
++                android:textColor="@color/black"
++                android:textSize="13sp" />
++
++            <TextView
++                android:id="@+id/incorrect"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="10dp"
++                android:gravity="center"
++                android:text="Incorrect"
++                android:textColor="@color/black"
++                android:textSize="13sp" />
++        </RelativeLayout>
++    </LinearLayout>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/second_row"
++        android:layout_marginTop="100dp"
++        android:elevation="10dp"
++        android:gravity="center">
++
++        <com.google.android.material.button.MaterialButton
++            android:layout_width="150dp"
++            android:layout_height="wrap_content"
++            android:background="@drawable/buttonbordershadow"
++            android:text="Play Quiz"
++            android:textAllCaps="false" />
++    </LinearLayout>
++
++</RelativeLayout>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(date 1610533745000)
++++ .idea/gradle.xml	(date 1610533745000)
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="testRunner" value="PLATFORM" />
++        <option name="disableWrapperSourceDistributionNotification" value="true" />
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="1.8" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++        <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/layout/phone_registration.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/phone_registration.xml	(date 1611048662000)
++++ app/src/main/res/layout/phone_registration.xml	(date 1611048662000)
+@@ -0,0 +1,180 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++
++    android:background="@color/bg">
++
++    <LinearLayout
++        android:id="@+id/registration_heading"
++        android:layout_width="match_parent"
++        android:layout_height="250dp"
++        android:background="@color/red"
++        android:orientation="vertical">
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="30dp"
++            android:layout_marginTop="40dp"
++            android:fontFamily="@font/poppins_medium"
++            android:lineHeight="50dp"
++            android:text="Phone \nRegistration"
++            android:textColor="@color/white"
++            android:textSize="40dp"
++            android:textStyle="bold" />
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="30dp"
++            android:layout_marginTop="10dp"
++            android:layout_marginEnd="30dp"
++            android:fontFamily="@font/poppins"
++
++            android:text="Please enter your valid phone number. We will send you 4-digit code to verify account."
++            android:textColor="@color/white" />
++
++    </LinearLayout>
++
++    <LinearLayout
++        android:id="@+id/location_container"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/registration_heading"
++        android:layout_margin="30dp"
++        android:orientation="vertical">
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/poppins"
++            android:text="Choose your location"
++            android:textColor="@color/black"
++            android:textSize="15sp" />
++
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="20dp">
++
++
++            <Spinner
++                android:id="@+id/spinner2"
++                android:layout_width="match_parent"
++                android:layout_height="45dp"
++                android:layout_centerVertical="true"
++                android:layout_gravity="center"
++                android:layout_marginStart="5dp"
++                android:background="@drawable/location_background"
++                android:dropDownSelector="@color/grey"
++                android:entries="India"
++                android:gravity="center"
++                android:spinnerMode="dropdown" />
++
++            <ImageView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_alignParentEnd="true"
++                android:layout_centerVertical="true"
++                android:layout_marginEnd="20dp"
++                android:src="@drawable/ic_drop_down" />
++
++            <View
++                android:id="@+id/vertical_line"
++                android:layout_width="2dp"
++                android:layout_height="35dp"
++                android:layout_centerVertical="true"
++                android:layout_marginStart="20dp"
++                android:layout_toEndOf="@+id/flag"
++                android:background="@color/grey" />
++
++            <ImageView
++                android:id="@+id/flag"
++                android:layout_width="30dp"
++                android:layout_height="20dp"
++                android:layout_centerVertical="true"
++                android:layout_marginStart="20dp"
++                android:scaleType="fitXY"
++                android:src="@drawable/flag" />
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="20dp"
++                android:layout_centerVertical="true"
++                android:layout_marginStart="20dp"
++                android:layout_toEndOf="@+id/vertical_line"
++                android:fontFamily="@font/poppins"
++                android:text="India"
++                android:textColor="@color/black" />
++
++        </RelativeLayout>
++    </LinearLayout>
++
++    <LinearLayout
++        android:id="@+id/phone_number_container"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/location_container"
++        android:layout_margin="30dp"
++        android:orientation="vertical">
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:fontFamily="@font/poppins"
++            android:text="Enter your phone number"
++            android:textColor="@color/black"
++            android:textSize="15sp" />
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="5dp"
++            android:layout_marginTop="20dp"
++            android:orientation="horizontal">
++
++            <TextView
++                android:layout_width="50dp"
++                android:layout_height="45dp"
++                android:background="@drawable/location_background"
++                android:gravity="center"
++                android:text="+91"
++                android:textColor="@color/black"
++                android:textSize="15sp" />
++
++            <EditText
++                android:layout_width="match_parent"
++                android:layout_height="45dp"
++                android:layout_marginStart="20dp"
++                android:background="@drawable/location_background"
++                android:gravity="center"
++                android:paddingStart="10dp"
++                android:text="0000000000"
++                android:textAlignment="textStart"
++                android:textSize="15sp"
++                tools:ignore="RtlCompat" />
++        </LinearLayout>
++
++    </LinearLayout>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:layout_below="@+id/phone_number_container"
++        android:layout_margin="30dp"
++        android:gravity="bottom">
++
++        <Button
++            android:layout_width="match_parent"
++            android:layout_height="55dp"
++            android:fontFamily="@font/poppins_medium"
++            android:text="Continue"
++            android:textAllCaps="false"
++            android:textSize="17sp" />
++
++    </LinearLayout>
++
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/anim/slide_in_right.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/anim/slide_in_right.xml	(date 1610468276000)
++++ app/src/main/res/anim/slide_in_right.xml	(date 1610468276000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="utf-8"?>
++<set xmlns:android="http://schemas.android.com/apk/res/android">
++    <translate
++        android:duration="@android:integer/config_mediumAnimTime"
++        android:fromXDelta="100%p"
++        android:toXDelta="0" />
++    <alpha
++        android:duration="@android:integer/config_mediumAnimTime"
++        android:fromAlpha="0.0"
++        android:toAlpha="1.0" />
++</set>
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_assembly.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_assembly.xml	(date 1610443650000)
++++ app/src/main/res/drawable/ic_assembly.xml	(date 1610443650000)
+@@ -0,0 +1,19 @@
++<vector android:height="22dp" android:viewportHeight="16"
++    android:viewportWidth="20" android:width="26dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="#00000000"
++        android:pathData="M14.0909,15V13.4445C14.0909,12.6194 13.7461,11.828 13.1323,11.2446C12.5186,10.6612 11.6862,10.3334 10.8182,10.3334H4.2727C3.4048,10.3334 2.5723,10.6612 1.9586,11.2446C1.3448,11.828 1,12.6194 1,13.4445V15"
++        android:strokeColor="#6C6C6C" android:strokeLineCap="round"
++        android:strokeLineJoin="round" android:strokeWidth="1.4"/>
++    <path android:fillColor="#00000000"
++        android:pathData="M7.5455,8.1337C9.353,8.1337 10.8182,6.6711 10.8182,4.867C10.8182,3.0629 9.353,1.6003 7.5455,1.6003C5.738,1.6003 4.2728,3.0629 4.2728,4.867C4.2728,6.6711 5.738,8.1337 7.5455,8.1337Z"
++        android:strokeColor="#6C6C6C" android:strokeLineCap="round"
++        android:strokeLineJoin="round" android:strokeWidth="1.4"/>
++    <path android:fillColor="#00000000"
++        android:pathData="M19,15V13.41C18.9995,12.7054 18.7581,12.021 18.3139,11.4641C17.8696,10.9073 17.2476,10.5095 16.5455,10.3334"
++        android:strokeColor="#6C6C6C" android:strokeLineCap="round"
++        android:strokeLineJoin="round" android:strokeWidth="1.4"/>
++    <path android:fillColor="#00000000"
++        android:pathData="M13.2728,1C13.9749,1.1857 14.5972,1.6076 15.0417,2.199C15.4861,2.7905 15.7273,3.5179 15.7273,4.2667C15.7273,5.0154 15.4861,5.7428 15.0417,6.3343C14.5972,6.9258 13.9749,7.3476 13.2728,7.5333"
++        android:strokeColor="#6C6C6C" android:strokeLineCap="round"
++        android:strokeLineJoin="round" android:strokeWidth="1.4"/>
++</vector>
+Index: app/src/main/res/values/dimens.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/dimens.xml	(date 1610358588000)
++++ app/src/main/res/values/dimens.xml	(date 1610358588000)
+@@ -0,0 +1,5 @@
++<resources>
++    <!-- Default screen margins, per the Android Design guidelines. -->
++    <dimen name="activity_horizontal_margin">16dp</dimen>
++    <dimen name="activity_vertical_margin">16dp</dimen>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_bio.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_bio.xml	(date 1610363995000)
++++ app/src/main/res/drawable/ic_bio.xml	(date 1610363995000)
+@@ -0,0 +1,20 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="20dp"
++    android:viewportWidth="20"
++    android:viewportHeight="16">
++  <path
++      android:pathData="M1,1H6.4C7.3548,1 8.2704,1.3278 8.9456,1.9112C9.6207,2.4947 10,3.286 10,4.1111V15C10,14.3812 9.7155,13.7877 9.2092,13.3501C8.7028,12.9125 8.0161,12.6667 7.3,12.6667H1V1Z"
++      android:strokeLineJoin="round"
++      android:strokeWidth="1.4"
++      android:fillColor="#00000000"
++      android:strokeColor="#6C6C6C"
++      android:strokeLineCap="round"/>
++  <path
++      android:pathData="M19,1H13.6C12.6452,1 11.7295,1.3278 11.0544,1.9112C10.3793,2.4947 10,3.286 10,4.1111V15C10,14.3812 10.2845,13.7877 10.7908,13.3501C11.2972,12.9125 11.9839,12.6667 12.7,12.6667H19V1Z"
++      android:strokeLineJoin="round"
++      android:strokeWidth="1.4"
++      android:fillColor="#00000000"
++      android:strokeColor="#6C6C6C"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/layout/biography_single.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/biography_single.xml	(date 1610724648000)
++++ app/src/main/res/layout/biography_single.xml	(date 1610724648000)
+@@ -0,0 +1,58 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <LinearLayout
++        android:id="@+id/bioImageContainer"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="30dp"
++        android:orientation="vertical">
++
++        <ImageView
++            android:id="@+id/assembley_state_image"
++            android:layout_width="300dp"
++            android:layout_height="300dp"
++            android:scaleType="centerCrop"
++            android:src="@drawable/flipper_modi" />
++
++        <TextView
++            android:id="@+id/assembley_state_text"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="10dp"
++            android:text="Narender Modi"
++            android:textAlignment="center"
++            android:textColor="@color/black"
++            android:textSize="30sp"
++            android:textStyle="normal" />
++    </LinearLayout>
++
++    <ScrollView
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:layout_below="@+id/bioImageContainer"
++        android:layout_marginTop="10dp"
++        >
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++           android:layout_marginStart="30dp"
++            android:layout_marginEnd="30dp">
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Narendra Damodardas Modi (Gujarati pronunciation: [ˈnəɾendrə dɑmodəɾˈdɑs ˈmodiː] (About this soundlisten); born 17 September 1950) is an Indian politician serving as the 14th and current Prime Minister of India since 2014. He was the Chief Minister of Gujarat from 2001 to 2014 and is the Member of Parliament for Varanasi. Modi is a member of the Bharatiya Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a Hindu nationalist volunteer organisation. He is the first prime minister outside of the Indian National Congress to win two consecutive terms with a full majority and the second to complete more than five years in office after Atal Bihari Vajpayee.[3]
++ than five years in office after Atal Bihari Vajpayee.[3]
++ "
++                android:textSize="20sp"
++                android:textColor="@color/black"
++                android:justificationMode="inter_word"
++                />
++        </LinearLayout>
++    </ScrollView>
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/menu/bottom_nav_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/menu/bottom_nav_menu.xml	(date 1610465855000)
++++ app/src/main/res/menu/bottom_nav_menu.xml	(date 1610465855000)
+@@ -0,0 +1,28 @@
++<?xml version="1.0" encoding="utf-8"?>
++<menu xmlns:android="http://schemas.android.com/apk/res/android">
++
++    <item
++        android:id="@+id/nav_home"
++        android:icon="@drawable/ic_home"
++        android:title="@string/title_home" />
++
++    <item
++        android:id="@+id/nav_assembley"
++        android:icon="@drawable/ic_assembly"
++        android:title="@string/title_assembley" />
++
++
++    <item
++        android:id="@+id/placeholder"
++        android:title="" />
++    <item
++        android:id="@+id/nav_poll"
++        android:icon="@drawable/ic_poll"
++        android:title="@string/title_poll" />
++    <item
++        android:id="@+id/nav_biography"
++        android:icon="@drawable/ic_bio"
++        android:title="@string/title_bio" />
++
++
++</menu>
+\ No newline at end of file
+Index: app/src/main/java/com/example/insideindia/ui/biography/BiographyViewModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/ui/biography/BiographyViewModel.java	(date 1610364205000)
++++ app/src/main/java/com/example/insideindia/ui/biography/BiographyViewModel.java	(date 1610364205000)
+@@ -0,0 +1,19 @@
++package com.example.insideindia.ui.biography;
++
++import androidx.lifecycle.LiveData;
++import androidx.lifecycle.MutableLiveData;
++import androidx.lifecycle.ViewModel;
++
++public class BiographyViewModel extends ViewModel {
++
++    private MutableLiveData<String> mText;
++
++    public BiographyViewModel() {
++        mText = new MutableLiveData<>();
++        mText.setValue("This is biography fragment");
++    }
++
++    public LiveData<String> getText() {
++        return mText;
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(date 1611050013000)
++++ app/src/main/res/layout/activity_main.xml	(date 1611050013000)
+@@ -0,0 +1,58 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/container"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <include
++        android:id="@+id/toolbar"
++        layout="@layout/toolbar" />
++
++    <fragment
++        android:id="@+id/nav_host_fragment"
++        android:name="androidx.navigation.fragment.NavHostFragment"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:layout_alignParentTop="true"
++        android:layout_marginTop="?attr/actionBarSize"
++        app:defaultNavHost="true"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:navGraph="@navigation/mobile_navigation" />
++
++    <com.google.android.material.bottomappbar.BottomAppBar
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_gravity="bottom"
++        app:contentInsetEnd="0dp"
++        app:contentInsetLeft="0dp"
++        app:contentInsetRight="0dp"
++        app:contentInsetStart="0dp">
++
++        <com.google.android.material.bottomnavigation.BottomNavigationView
++            android:id="@+id/nav_view"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            app:itemTextColor="@color/red"
++            app:menu="@menu/bottom_nav_menu" />
++
++
++    </com.google.android.material.bottomappbar.BottomAppBar>
++
++    <com.google.android.material.floatingactionbutton.FloatingActionButton
++        android:id="@+id/nav_quiz"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:elevation="3dp"
++        android:src="@drawable/ic_quiz"
++        android:theme="@style/Fab"
++        android:background="@color/white"
++        android:backgroundTint="@color/white"
++        app:elevation="3dp"
++        app:layout_anchor="@id/nav_view" />
++
++</androidx.coordinatorlayout.widget.CoordinatorLayout>
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_home.xml	(date 1610363945000)
++++ app/src/main/res/drawable/ic_home.xml	(date 1610363945000)
+@@ -0,0 +1,13 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="20dp"
++    android:height="20dp"
++    android:viewportWidth="16"
++    android:viewportHeight="16">
++  <path
++      android:pathData="M1,5.9L8,1L15,5.9V13.6C15,13.9713 14.8361,14.3274 14.5444,14.5899C14.2527,14.8525 13.857,15 13.4444,15H2.5556C2.143,15 1.7473,14.8525 1.4556,14.5899C1.1639,14.3274 1,13.9713 1,13.6V5.9Z"
++      android:strokeLineJoin="round"
++      android:strokeWidth="1.4"
++      android:fillColor="#00000000"
++      android:strokeColor="#6C6C6C"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/drawable/ic_poll.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_poll.xml	(date 1610364056000)
++++ app/src/main/res/drawable/ic_poll.xml	(date 1610364056000)
+@@ -0,0 +1,12 @@
++<vector android:height="20dp" android:viewportHeight="16"
++    android:viewportWidth="14" android:width="20dp" xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="#00000000" android:pathData="M13,15V6.25"
++        android:strokeColor="#6C6C6C" android:strokeLineCap="round"
++        android:strokeLineJoin="round" android:strokeWidth="1.4"/>
++    <path android:fillColor="#00000000" android:pathData="M7,15V1"
++        android:strokeColor="#6C6C6C" android:strokeLineCap="round"
++        android:strokeLineJoin="round" android:strokeWidth="1.4"/>
++    <path android:fillColor="#00000000" android:pathData="M1,15V9.75"
++        android:strokeColor="#6C6C6C" android:strokeLineCap="round"
++        android:strokeLineJoin="round" android:strokeWidth="1.4"/>
++</vector>
+Index: app/src/main/java/com/example/insideindia/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/MainActivity.java	(date 1610363863000)
++++ app/src/main/java/com/example/insideindia/MainActivity.java	(date 1610363863000)
+@@ -0,0 +1,36 @@
++package com.example.insideindia;
++
++import android.os.Bundle;
++
++import com.google.android.material.bottomnavigation.BottomNavigationView;
++
++import androidx.appcompat.app.AppCompatActivity;
++import androidx.appcompat.widget.Toolbar;
++import androidx.navigation.NavController;
++import androidx.navigation.Navigation;
++import androidx.navigation.ui.AppBarConfiguration;
++import androidx.navigation.ui.NavigationUI;
++
++public class MainActivity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_main);
++
++        Toolbar toolbar = findViewById(R.id.toolbar);
++        setSupportActionBar(toolbar);
++        getSupportActionBar().setTitle("Inside India");
++        BottomNavigationView navView = findViewById(R.id.nav_view);
++        // Passing each menu ID as a set of Ids because each
++        // menu should be considered as top level destinations.
++//              AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
++//                R.id.nav_home, R.id.nav_assembley, R.id.nav_poll,R.id.nav_biography)
++//                .build();
++        //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
++
++        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
++        NavigationUI.setupWithNavController(navView, navController);
++    }
++
++}
+\ No newline at end of file
+Index: app/src/main/java/com/example/insideindia/ui/biography/BiographyFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/ui/biography/BiographyFragment.java	(date 1610360256000)
++++ app/src/main/java/com/example/insideindia/ui/biography/BiographyFragment.java	(date 1610360256000)
+@@ -0,0 +1,36 @@
++package com.example.insideindia.ui.biography;
++
++import android.os.Bundle;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++import android.widget.TextView;
++
++import androidx.annotation.NonNull;
++import androidx.annotation.Nullable;
++import androidx.fragment.app.Fragment;
++import androidx.lifecycle.Observer;
++import androidx.lifecycle.ViewModelProvider;
++
++import com.example.insideindia.R;
++import com.example.insideindia.ui.assembley.AssembleyViewModel;
++
++public class BiographyFragment extends Fragment {
++
++    private BiographyViewModel biographyViewModel;
++
++    public View onCreateView(@NonNull LayoutInflater inflater,
++                             ViewGroup container, Bundle savedInstanceState) {
++        biographyViewModel =
++                new ViewModelProvider(this).get(BiographyViewModel.class);
++        View root = inflater.inflate(R.layout.fragment_biography, container, false);
++        final TextView textView = root.findViewById(R.id.text_dashboard);
++        biographyViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
++            @Override
++            public void onChanged(@Nullable String s) {
++                textView.setText(s);
++            }
++        });
++        return root;
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/values/font_certs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/font_certs.xml	(date 1611044677000)
++++ app/src/main/res/values/font_certs.xml	(date 1611044677000)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <array name="com_google_android_gms_fonts_certs">
++        <item>@array/com_google_android_gms_fonts_certs_dev</item>
++        <item>@array/com_google_android_gms_fonts_certs_prod</item>
++    </array>
++    <string-array name="com_google_android_gms_fonts_certs_dev">
++        <item>
++            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
++        </item>
++    </string-array>
++    <string-array name="com_google_android_gms_fonts_certs_prod">
++        <item>
++            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
++        </item>
++    </string-array>
++</resources>
+Index: app/src/main/java/com/example/insideindia/ui/polls/PollsViewModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/ui/polls/PollsViewModel.java	(date 1610364205000)
++++ app/src/main/java/com/example/insideindia/ui/polls/PollsViewModel.java	(date 1610364205000)
+@@ -0,0 +1,19 @@
++package com.example.insideindia.ui.polls;
++
++import androidx.lifecycle.LiveData;
++import androidx.lifecycle.MutableLiveData;
++import androidx.lifecycle.ViewModel;
++
++public class PollsViewModel extends ViewModel {
++
++    private MutableLiveData<String> mText;
++
++    public PollsViewModel() {
++        mText = new MutableLiveData<>();
++        mText.setValue("This is poll fragment");
++    }
++
++    public LiveData<String> getText() {
++        return mText;
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/values/preloaded_fonts.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/preloaded_fonts.xml	(date 1611044806000)
++++ app/src/main/res/values/preloaded_fonts.xml	(date 1611044806000)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <array name="preloaded_fonts" translatable="false">
++        <item>@font/poppins</item>
++        <item>@font/poppins_light</item>
++        <item>@font/poppins_medium</item>
++    </array>
++</resources>
+Index: app/src/main/res/layout/fragment_biography.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_biography.xml	(date 1610723989000)
++++ app/src/main/res/layout/fragment_biography.xml	(date 1610723989000)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ui.polls.PollsFragment">
++<ScrollView
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <androidx.recyclerview.widget.RecyclerView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        />
++</ScrollView>
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/navigation/mobile_navigation.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/navigation/mobile_navigation.xml	(date 1610360835000)
++++ app/src/main/res/navigation/mobile_navigation.xml	(date 1610360835000)
+@@ -0,0 +1,31 @@
++<?xml version="1.0" encoding="utf-8"?>
++<navigation xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/mobile_navigation"
++    app:startDestination="@+id/nav_home">
++
++    <fragment
++        android:id="@+id/nav_home"
++        android:name="com.example.insideindia.ui.home.HomeFragment"
++        android:label="@string/title_home"
++        tools:layout="@layout/fragment_home" />
++
++    <fragment
++        android:id="@+id/nav_assembley"
++        android:name="com.example.insideindia.ui.assembley.AssembleyFragment"
++        android:label="@string/title_assembley"
++        tools:layout="@layout/fragment_assembley" />
++
++    <fragment
++        android:id="@+id/nav_poll"
++        android:name="com.example.insideindia.ui.polls.PollsFragment"
++        android:label="@string/title_poll"
++        tools:layout="@layout/fragment_polls" />
++    <fragment
++        android:id="@+id/nav_biography"
++        android:name="com.example.insideindia.ui.polls.PollsFragment"
++        android:label="@string/title_bio"
++        tools:layout="@layout/fragment_biography" />
++
++</navigation>
+\ No newline at end of file
+Index: app/src/main/res/font/poppins_light.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/font/poppins_light.xml	(date 1611044677000)
++++ app/src/main/res/font/poppins_light.xml	(date 1611044677000)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
++        app:fontProviderAuthority="com.google.android.gms.fonts"
++        app:fontProviderPackage="com.google.android.gms"
++        app:fontProviderQuery="name=Poppins&amp;weight=300"
++        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
++</font-family>
+Index: app/src/main/res/layout/fragment_polls.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_polls.xml	(date 1610970242000)
++++ app/src/main/res/layout/fragment_polls.xml	(date 1610970242000)
+@@ -0,0 +1,180 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++
++    tools:context=".ui.polls.PollsFragment">
++
++
++    <LinearLayout
++        android:id="@+id/poll_logo"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="50dp">
++
++        <ImageView
++            android:layout_width="60dp"
++            android:layout_height="60dp"
++            android:layout_marginEnd="10dp"
++            android:src="@drawable/ic_newpoll" />
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="10dp"
++            android:text="New Poll"
++            android:textColor="@color/black"
++            android:layout_gravity="center_vertical"
++            android:textSize="30sp"
++            android:textStyle="bold" />
++    </LinearLayout>
++
++    <LinearLayout
++        android:id="@+id/question_container"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/poll_logo"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="50dp">
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="What is your Current role ?"
++            android:textColor="@color/black"
++            android:textSize="25sp" />
++    </LinearLayout>
++
++
++    <LinearLayout
++        android:id="@+id/options"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_below="@+id/question_container"
++        android:layout_marginStart="30dp"
++        android:layout_marginTop="50dp"
++        android:layout_marginEnd="30dp"
++        android:orientation="vertical">
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="50dp"
++            android:background="@drawable/option_border">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_gravity="center_vertical"
++                android:paddingStart="10dp"
++                android:paddingEnd="10dp"
++                android:textColor="@color/black"
++                android:text="Maketing"
++
++                android:textSize="20sp" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="50dp"
++            android:layout_marginTop="30dp"
++
++            android:background="@drawable/option_border">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_gravity="center_vertical"
++                android:textColor="@color/black"
++                android:paddingStart="10dp"
++                android:paddingEnd="10dp"
++                android:text="Option 2"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="50dp"
++            android:layout_marginTop="30dp"
++
++            android:background="@drawable/option_border">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_gravity="center_vertical"
++                android:textColor="@color/black"
++                android:paddingStart="10dp"
++                android:paddingEnd="10dp"
++                android:text="Option 3"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="50dp"
++            android:layout_marginTop="30dp"
++
++            android:background="@drawable/option_border">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_gravity="center_vertical"
++                android:textColor="@color/black"
++                android:paddingStart="10dp"
++                android:paddingEnd="10dp"
++                android:text="Option 4"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++    </LinearLayout>
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="50dp"
++        android:layout_below="@+id/options"
++        android:layout_marginTop="50dp"
++        android:layout_marginStart="30dp"
++        android:layout_marginEnd="30dp">
++
++
++        <LinearLayout
++            android:layout_width="160dp"
++            android:layout_height="50dp"
++            android:background="@drawable/option_border">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Vote"
++                android:textAlignment="center"
++                android:textColor="@color/black"
++                android:paddingStart="10dp"
++                android:paddingEnd="10dp"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++        <LinearLayout
++            android:layout_width="160dp"
++            android:layout_height="50dp"
++            android:background="@drawable/option_border"
++            android:layout_marginStart="30dp">
++
++            <TextView
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:text="Time"
++                android:textColor="@color/black"
++                android:paddingStart="10dp"
++                android:textAlignment="center"
++                android:paddingEnd="10dp"
++                android:textSize="20sp" />
++
++        </LinearLayout>
++    </LinearLayout>
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/drawable/location_background.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/location_background.xml	(date 1611045637000)
++++ app/src/main/res/drawable/location_background.xml	(date 1611045637000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android">
++    <solid android:color="@android:color/white" />
++    <corners android:radius="10dp" />
++
++</shape>
+Index: app/src/main/java/com/example/insideindia/ui/assembley/AssembleyViewModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/ui/assembley/AssembleyViewModel.java	(date 1610364205000)
++++ app/src/main/java/com/example/insideindia/ui/assembley/AssembleyViewModel.java	(date 1610364205000)
+@@ -0,0 +1,19 @@
++package com.example.insideindia.ui.assembley;
++
++import androidx.lifecycle.LiveData;
++import androidx.lifecycle.MutableLiveData;
++import androidx.lifecycle.ViewModel;
++
++public class AssembleyViewModel extends ViewModel {
++
++    private MutableLiveData<String> mText;
++
++    public AssembleyViewModel() {
++        mText = new MutableLiveData<>();
++        mText.setValue("This is Assembley fragment");
++    }
++
++    public LiveData<String> getText() {
++        return mText;
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_quiz.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_quiz.xml	(date 1611049973000)
++++ app/src/main/res/drawable/ic_quiz.xml	(date 1611049973000)
+@@ -0,0 +1,9 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="37dp"
++    android:height="20dp"
++    android:viewportWidth="21"
++    android:viewportHeight="10">
++  <path
++      android:pathData="M6.36,9.32L4.97,7.93C4.63,8.0233 4.2833,8.07 3.93,8.07C3.2833,8.07 2.6933,7.92 2.16,7.62C1.6267,7.3133 1.2033,6.89 0.89,6.35C0.5833,5.8033 0.43,5.19 0.43,4.51C0.43,3.83 0.5833,3.22 0.89,2.68C1.2033,2.1333 1.6267,1.71 2.16,1.41C2.6933,1.1033 3.2833,0.95 3.93,0.95C4.5833,0.95 5.1767,1.1033 5.71,1.41C6.2433,1.71 6.6633,2.13 6.97,2.67C7.2767,3.21 7.43,3.8233 7.43,4.51C7.43,5.1767 7.2833,5.7767 6.99,6.31C6.6967,6.8433 6.2933,7.2633 5.78,7.57L7.54,9.32H6.36ZM1.36,4.51C1.36,5.0633 1.47,5.55 1.69,5.97C1.9167,6.39 2.2233,6.7133 2.61,6.94C3.0033,7.1667 3.4433,7.28 3.93,7.28C4.4167,7.28 4.8533,7.1667 5.24,6.94C5.6333,6.7133 5.94,6.39 6.16,5.97C6.3867,5.55 6.5,5.0633 6.5,4.51C6.5,3.95 6.3867,3.4633 6.16,3.05C5.94,2.63 5.6367,2.3067 5.25,2.08C4.8633,1.8533 4.4233,1.74 3.93,1.74C3.4367,1.74 2.9967,1.8533 2.61,2.08C2.2233,2.3067 1.9167,2.63 1.69,3.05C1.47,3.4633 1.36,3.95 1.36,4.51ZM13.5109,2.52V8H12.6009V7.19C12.4275,7.47 12.1842,7.69 11.8709,7.85C11.5642,8.0033 11.2242,8.08 10.8509,8.08C10.4242,8.08 10.0409,7.9933 9.7009,7.82C9.3609,7.64 9.0909,7.3733 8.8909,7.02C8.6975,6.6667 8.6009,6.2367 8.6009,5.73V2.52H9.5009V5.61C9.5009,6.15 9.6375,6.5667 9.9109,6.86C10.1842,7.1467 10.5575,7.29 11.0309,7.29C11.5175,7.29 11.9009,7.14 12.1809,6.84C12.4609,6.54 12.6009,6.1033 12.6009,5.53V2.52H13.5109ZM15.5173,1.63C15.344,1.63 15.1973,1.57 15.0773,1.45C14.9573,1.33 14.8973,1.1833 14.8973,1.01C14.8973,0.8367 14.9573,0.69 15.0773,0.57C15.1973,0.45 15.344,0.39 15.5173,0.39C15.684,0.39 15.824,0.45 15.9373,0.57C16.0573,0.69 16.1173,0.8367 16.1173,1.01C16.1173,1.1833 16.0573,1.33 15.9373,1.45C15.824,1.57 15.684,1.63 15.5173,1.63ZM15.9573,2.52V8H15.0473V2.52H15.9573ZM18.1883,7.25H20.8783V8H17.1483V7.25L19.8083,3.26H17.1683V2.52H20.8583V3.26L18.1883,7.25Z"
++      android:fillColor="#D90404"/>
++</vector>
+Index: app/src/main/java/com/example/insideindia/ui/polls/PollsFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/ui/polls/PollsFragment.java	(date 1610360256000)
++++ app/src/main/java/com/example/insideindia/ui/polls/PollsFragment.java	(date 1610360256000)
+@@ -0,0 +1,35 @@
++package com.example.insideindia.ui.polls;
++
++import android.os.Bundle;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++import android.widget.TextView;
++
++import androidx.annotation.NonNull;
++import androidx.annotation.Nullable;
++import androidx.fragment.app.Fragment;
++import androidx.lifecycle.Observer;
++import androidx.lifecycle.ViewModelProvider;
++
++import com.example.insideindia.R;
++
++public class PollsFragment extends Fragment {
++
++    private PollsViewModel pollsViewModel;
++
++    public View onCreateView(@NonNull LayoutInflater inflater,
++                             ViewGroup container, Bundle savedInstanceState) {
++        pollsViewModel =
++                new ViewModelProvider(this).get(PollsViewModel.class);
++        View root = inflater.inflate(R.layout.fragment_polls, container, false);
++        final TextView textView = root.findViewById(R.id.text_notifications);
++        pollsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
++            @Override
++            public void onChanged(@Nullable String s) {
++                textView.setText(s);
++            }
++        });
++        return root;
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/font/poppins_medium.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/font/poppins_medium.xml	(date 1611044705000)
++++ app/src/main/res/font/poppins_medium.xml	(date 1611044705000)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
++        app:fontProviderAuthority="com.google.android.gms.fonts"
++        app:fontProviderPackage="com.google.android.gms"
++        app:fontProviderQuery="name=Poppins&amp;weight=500"
++        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
++</font-family>
+Index: app/src/main/res/font/poppins.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/font/poppins.xml	(date 1611044806000)
++++ app/src/main/res/font/poppins.xml	(date 1611044806000)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
++        app:fontProviderAuthority="com.google.android.gms.fonts"
++        app:fontProviderPackage="com.google.android.gms"
++        app:fontProviderQuery="Poppins"
++        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
++</font-family>
+Index: app/src/main/res/layout/fragment_assembley.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_assembley.xml	(date 1610723989000)
++++ app/src/main/res/layout/fragment_assembley.xml	(date 1610723989000)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ui.assembley.AssembleyFragment">
++
++    <ScrollView
++        android:layout_width="match_parent"
++        android:layout_height="match_parent">
++
++        <androidx.recyclerview.widget.RecyclerView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++
++            />
++    </ScrollView>
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/insideindia/ui/home/HomeViewModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/ui/home/HomeViewModel.java	(date 1610358588000)
++++ app/src/main/java/com/example/insideindia/ui/home/HomeViewModel.java	(date 1610358588000)
+@@ -0,0 +1,19 @@
++package com.example.insideindia.ui.home;
++
++import androidx.lifecycle.LiveData;
++import androidx.lifecycle.MutableLiveData;
++import androidx.lifecycle.ViewModel;
++
++public class HomeViewModel extends ViewModel {
++
++    private MutableLiveData<String> mText;
++
++    public HomeViewModel() {
++        mText = new MutableLiveData<>();
++        mText.setValue("This is home fragment");
++    }
++
++    public LiveData<String> getText() {
++        return mText;
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/example/insideindia/ui/assembley/AssembleyFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/ui/assembley/AssembleyFragment.java	(date 1610359982000)
++++ app/src/main/java/com/example/insideindia/ui/assembley/AssembleyFragment.java	(date 1610359982000)
+@@ -0,0 +1,35 @@
++package com.example.insideindia.ui.assembley;
++
++import android.os.Bundle;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++import android.widget.TextView;
++
++import androidx.annotation.NonNull;
++import androidx.annotation.Nullable;
++import androidx.fragment.app.Fragment;
++import androidx.lifecycle.Observer;
++import androidx.lifecycle.ViewModelProvider;
++
++import com.example.insideindia.R;
++
++public class AssembleyFragment extends Fragment {
++
++    private AssembleyViewModel assembleyViewModel;
++
++    public View onCreateView(@NonNull LayoutInflater inflater,
++                             ViewGroup container, Bundle savedInstanceState) {
++        assembleyViewModel =
++                new ViewModelProvider(this).get(AssembleyViewModel.class);
++        View root = inflater.inflate(R.layout.fragment_assembley, container, false);
++        final TextView textView = root.findViewById(R.id.text_dashboard);
++        assembleyViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
++            @Override
++            public void onChanged(@Nullable String s) {
++                textView.setText(s);
++            }
++        });
++        return root;
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_drop_down.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_drop_down.xml	(date 1611045263000)
++++ app/src/main/res/drawable/ic_drop_down.xml	(date 1611045263000)
+@@ -0,0 +1,13 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="14dp"
++    android:height="8dp"
++    android:viewportWidth="14"
++    android:viewportHeight="8">
++  <path
++      android:strokeWidth="1"
++      android:pathData="M1,1L7,7L13,1"
++      android:strokeLineJoin="round"
++      android:fillColor="#00000000"
++      android:strokeColor="#6B6B6B"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/layout/fragment_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_home.xml	(date 1610701239000)
++++ app/src/main/res/layout/fragment_home.xml	(date 1610701239000)
+@@ -0,0 +1,45 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/bg"
++    tools:context=".ui.home.HomeFragment">
++
++    <androidx.viewpager.widget.ViewPager
++        android:id="@+id/viewPager"
++        android:layout_width="match_parent"
++        android:layout_height="230dp"
++        android:layout_marginBottom="8dp" />
++<include
++    layout="@layout/slider_dots"/>
++
++    <LinearLayout
++        android:layout_width="380dp"
++        android:layout_height="340dp"
++        android:layout_below="@+id/SliderDots"
++        android:layout_marginTop="30dp"
++        android:layout_centerHorizontal="true"
++        android:orientation="vertical">
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:text="Recommended News For You :"
++            android:textSize="20sp"
++            android:textStyle="normal"
++            android:textColor="@color/black"
++            />
++
++        <androidx.recyclerview.widget.RecyclerView
++            android:layout_width="match_parent"
++            android:layout_height="260dp"
++            android:background="@color/white"
++            android:layout_marginTop="30dp"
++            android:layout_marginBottom="8dp"
++            />
++        <include
++            layout="@layout/slider_dots"/>
++
++    </LinearLayout>
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/insideindia/ui/home/HomeFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/insideindia/ui/home/HomeFragment.java	(date 1610468468000)
++++ app/src/main/java/com/example/insideindia/ui/home/HomeFragment.java	(date 1610468468000)
+@@ -0,0 +1,47 @@
++package com.example.insideindia.ui.home;
++
++import android.os.Bundle;
++import android.transition.Slide;
++import android.util.Log;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++import android.widget.ImageView;
++import android.widget.RadioButton;
++import android.widget.TextView;
++import android.widget.ViewFlipper;
++
++import androidx.annotation.NonNull;
++import androidx.fragment.app.Fragment;
++import androidx.lifecycle.ViewModelProvider;
++
++import com.example.insideindia.R;
++
++
++public class HomeFragment extends Fragment {
++
++    private static final String TAG = "Home";
++    private HomeViewModel homeViewModel;
++
++
++
++    public View onCreateView(@NonNull LayoutInflater inflater,
++                             ViewGroup container, Bundle savedInstanceState) {
++        homeViewModel =
++                new ViewModelProvider(this).get(HomeViewModel.class);
++        View root = inflater.inflate(R.layout.fragment_home, container, false);
++
++//        final TextView textView = root.findViewById(R.id.text_home);
++//        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
++//            @Override
++//            public void onChanged(@Nullable String s) {
++//                textView.setText(s);
++//            }
++//        });
++
++
++        return root;
++
++
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/colors.xml	(date 1611049372000)
++++ app/src/main/res/values/colors.xml	(date 1611049372000)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++<!--    <color name="purple_200">#FFBB86FC</color>-->
++<!--    <color name="purple_500">#FF6200EE</color>-->
++<!--    <color name="purple_700">#FF3700B3</color>-->
++    <color name="teal_200">#FF03DAC5</color>
++    <color name="teal_700">#FF018786</color>
++    <color name="black">#FF000000</color>
++    <color name="white">#FFFFFFFF</color>
++    <color name="red">#D90404</color>
++    <color name="red_light">#DD1818</color>
++
++    <color name="bg">#F6F6F6</color>
++
++    <color name="grey">#6EC4C4C4</color>
++    <color name="lightText">#505050</color>
++    <color name="correctQuestion">#FFE500</color>
++    <color name="incorrectQuestion">#FF0000</color>
++    <color name="quizBg">#111111</color>
++    <color name="verification_edit">#52FFFFFF</color>
++
++
++
++
++
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values-night/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-night/themes.xml	(date 1610363387000)
++++ app/src/main/res/values-night/themes.xml	(date 1610363387000)
+@@ -0,0 +1,16 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Theme.InsideIndia" parent="Theme.MaterialComponents.DayNight.NoActionBar">
++        <!-- Primary brand color. -->
++        <item name="colorPrimary">@color/red</item>
++        <item name="colorPrimaryVariant">@color/bg</item>
++        <item name="colorOnPrimary">@color/black</item>
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/teal_200</item>
++        <item name="colorSecondaryVariant">@color/teal_200</item>
++        <item name="colorOnSecondary">@color/black</item>
++        <!-- Status bar color. -->
++        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(date 1610358588000)
++++ app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(date 1610358588000)
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="utf-8"?>
++<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
++    <background android:drawable="@drawable/ic_launcher_background" />
++    <foreground android:drawable="@drawable/ic_launcher_foreground" />
++</adaptive-icon>
+\ No newline at end of file
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/themes.xml	(date 1610973824000)
++++ app/src/main/res/values/themes.xml	(date 1610973824000)
+@@ -0,0 +1,27 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Theme.InsideIndia" parent="Theme.MaterialComponents.DayNight.NoActionBar">
++        <!-- Primary brand color. -->
++        <item name="colorPrimary">@color/red</item>
++        <item name="colorPrimaryVariant">@color/red_light</item>
++        <item name="colorOnPrimary">@color/bg</item>
++
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/red</item>
++        <item name="colorSecondaryVariant">@color/teal_700</item>
++        <item name="colorOnSecondary">@color/black</item>
++        <!-- Status bar color. -->
++
++        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++    <style name="Fab" parent="Theme.MaterialComponents.DayNight.NoActionBar">
++
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/bg</item>
++
++        <!-- Status bar color. -->
++        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(date 1610359508000)
++++ app/src/main/res/values/strings.xml	(date 1610359508000)
+@@ -0,0 +1,8 @@
++<resources>
++    <string name="app_name">InsideIndia</string>
++    <string name="title_home">Home</string>
++    <string name="title_assembley">Assembley</string>
++    <string name="title_poll">Polls</string>
++    <string name="title_bio">Biography</string>
++
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_launcher_background.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_launcher_background.xml	(date 1610358588000)
++++ app/src/main/res/drawable/ic_launcher_background.xml	(date 1610358588000)
+@@ -0,0 +1,170 @@
++<?xml version="1.0" encoding="utf-8"?>
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="108dp"
++    android:height="108dp"
++    android:viewportWidth="108"
++    android:viewportHeight="108">
++    <path
++        android:fillColor="#3DDC84"
++        android:pathData="M0,0h108v108h-108z" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M9,0L9,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,0L19,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M29,0L29,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M39,0L39,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M49,0L49,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M59,0L59,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M69,0L69,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M79,0L79,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M89,0L89,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M99,0L99,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,9L108,9"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,19L108,19"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,29L108,29"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,39L108,39"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,49L108,49"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,59L108,59"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,69L108,69"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,79L108,79"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,89L108,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,99L108,99"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,29L89,29"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,39L89,39"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,49L89,49"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,59L89,59"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,69L89,69"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,79L89,79"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M29,19L29,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M39,19L39,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M49,19L49,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M59,19L59,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M69,19L69,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M79,19L79,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++</vector>
+Index: app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/ic_launcher_foreground.xml	(date 1610358588000)
++++ app/src/main/res/drawable-v24/ic_launcher_foreground.xml	(date 1610358588000)
+@@ -0,0 +1,30 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:aapt="http://schemas.android.com/aapt"
++    android:width="108dp"
++    android:height="108dp"
++    android:viewportWidth="108"
++    android:viewportHeight="108">
++    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
++        <aapt:attr name="android:fillColor">
++            <gradient
++                android:endX="85.84757"
++                android:endY="92.4963"
++                android:startX="42.9492"
++                android:startY="49.59793"
++                android:type="linear">
++                <item
++                    android:color="#44000000"
++                    android:offset="0.0" />
++                <item
++                    android:color="#00000000"
++                    android:offset="1.0" />
++            </gradient>
++        </aapt:attr>
++    </path>
++    <path
++        android:fillColor="#FFFFFF"
++        android:fillType="nonZero"
++        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
++        android:strokeWidth="1"
++        android:strokeColor="#00000000" />
++</vector>
+\ No newline at end of file
