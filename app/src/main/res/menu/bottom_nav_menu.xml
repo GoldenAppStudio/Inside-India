@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/nav_assembley"
+        android:icon="@drawable/ic_assembly"
+        android:title="@string/title_assembley" />
+
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+    <item
+        android:id="@+id/nav_poll"
+        android:icon="@drawable/ic_poll"
+        android:title="@string/title_poll" />
+    <item
+        android:id="@+id/nav_biography"
+        android:icon="@drawable/ic_bio"
+        android:title="@string/title_bio" />
+
+
+</menu>

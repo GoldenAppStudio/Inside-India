@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.insideindia.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_assembley"
+        android:name="com.example.insideindia.ui.assembley.AssembleyFragment"
+        android:label="@string/title_assembley"
+        tools:layout="@layout/fragment_assembley" />
+
+    <fragment
+        android:id="@+id/nav_poll"
+        android:name="com.example.insideindia.ui.polls.PollsFragment"
+        android:label="@string/title_poll"
+        tools:layout="@layout/fragment_polls" />
+    <fragment
+        android:id="@+id/nav_biography"
+        android:name="com.example.insideindia.ui.polls.PollsFragment"
+        android:label="@string/title_bio"
+        tools:layout="@layout/fragment_biography" />
+
+</navigation>

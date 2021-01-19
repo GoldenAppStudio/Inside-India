@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="10dip">
+
+    <ImageView
+        android:id="@+id/spinner_img"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/flag" />
+
+    <TextView
+        android:id="@+id/spinner_name"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:text="India"
+        android:fontFamily="@font/poppins"
+        android:textSize="17sp"
+        android:textColor="@color/black" />
+</LinearLayout>
